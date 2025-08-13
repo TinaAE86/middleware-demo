@@ -1,6 +1,6 @@
 package com.alibaba.aidc.unitTest;
 
-import com.alibaba.aidc.Application;
+import com.alibaba.aidc.middleware.demo.Application;
 import com.taobao.pandora.boot.test.junit4.DelegateTo;
 import com.taobao.pandora.boot.test.junit4.PandoraBootRunner;
 import org.junit.Assert;

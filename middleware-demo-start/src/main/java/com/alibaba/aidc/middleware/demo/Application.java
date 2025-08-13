@@ -1,4 +1,4 @@
-package com.alibaba.aidc;
+package com.alibaba.aidc.middleware.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

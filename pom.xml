@@ -51,6 +51,26 @@
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.alibaba.aidc</groupId>
+				<artifactId>middleware-demo-remote</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba.aidc</groupId>
+				<artifactId>middleware-demo-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba.aidc</groupId>
+				<artifactId>middleware-demo-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba.aidc</groupId>
+				<artifactId>middleware-demo-dal</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
 				<version>${spring-boot.version}</version>
@@ -94,6 +114,29 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>99.0-does-not-exist</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>999-not-exist-v3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.38</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.18.0</version>
+		</dependency>
+    </dependencies>
 
 	<build>
 		<pluginManagement>
@@ -164,6 +207,7 @@
 					<version>${maven-compile-plugin.version}</version>
 					<configuration>
 						<parameters>true</parameters>
+						<release>${java.version}</release>
 					</configuration>
 				</plugin>
 			</plugins>
@@ -176,6 +220,10 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>

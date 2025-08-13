@@ -1,4 +1,4 @@
-package com.alibaba.aidc;
+package com.alibaba.aidc.middleware.demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

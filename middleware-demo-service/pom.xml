@@ -12,4 +12,27 @@
 	<packaging>jar</packaging>
 	<name>aidc-middleware-demo-service</name>
 
+	<dependencies>
+		<dependency>
+			<groupId>com.alibaba.aidc</groupId>
+			<artifactId>middleware-demo-remote</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.aidc</groupId>
+			<artifactId>middleware-demo-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.aidc</groupId>
+			<artifactId>middleware-demo-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.aidc</groupId>
+			<artifactId>middleware-demo-dal</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
 </project>

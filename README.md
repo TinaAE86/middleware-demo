@@ -3,12 +3,12 @@
 解压后生成以下两个子目录
 
 * middleware-demo-service，包含各中间件的使用示例代码，代码在src/main/java目录下的com.alibaba.aidc包中。
-* middleware-demo-start，包含启动类`com.alibaba.aidc.Application`。中间件使用示例的单元测试代码在`src/test/java`目录下的`com.alibaba.aidc`包中。日志配置文件为`src/main/resources`目录下的logback-spring.xml。
+* middleware-demo-start，包含启动类`com.alibaba.aidc.middleware.demo.Application`。中间件使用示例的单元测试代码在`src/test/java`目录下的`com.alibaba.aidc`包中。日志配置文件为`src/main/resources`目录下的logback-spring.xml。
 * 使用springmvc的代码在`src/main/java`目录下的`com.alibaba.aidc`包中。
 
 ## 使用方式
 ### 在开发工具中执行
-将工程导入eclipse或者idea后，直接执行包含main方法的类`com.alibaba.aidc.Application`。
+将工程导入eclipse或者idea后，直接执行包含main方法的类`com.alibaba.aidc.middleware.demo.Application`。
 
 ### 使用fat jar的方式
 这也是pandora boot应用发布的方式。首先执行下列命令打包
